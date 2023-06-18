@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money</title>
+</head>
+<body>
+   <script type = "text/javascript">
+  let money = +prompt('Яку суму хочете зняти (Мінімальна банкнота 10 грн.)','');
+if (money < 10 || money > 1000) {
+alert('На жаль, Ви  можете зняти гроші на суму від 10 грн. до 1000 грн.');
+}else if(money%10==0){
+alert('Ваша сума '+money+' грн.')
+}else{
+alert('Банкомат не видає такі купюри')
+}
+</script>
+</body>
+</html>
